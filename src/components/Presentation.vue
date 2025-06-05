@@ -8,7 +8,7 @@ let id = 0
 const members = ref([
     { id: id++, nom: 'Mikel Vinciguerra', role: "Président",image:mikelImage, description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in commodo risus. Phasellus laoreet bibendum nunc non imperdiet. Nulla malesuada, leo et egestas facilisis, sapien turpis fermentum eros, sed efficitur sapien mi in nunc. Aliquam mollis laoreet pretium. Mauris eu massa sed magna eleifend volutpat vitae in turpis."},
     { id: id++, nom: 'Paul Skutecki', role: "Respo web",image:paulImage, description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in commodo risus. Phasellus laoreet bibendum nunc non imperdiet. Nulla malesuada, leo et egestas facilisis, sapien turpis fermentum eros, sed efficitur sapien mi in nunc. Aliquam mollis laoreet pretium. Mauris eu massa sed magna eleifend volutpat vitae in turpis."},
-    { id: id++, nom: 'Maxime', role: "Respo Kitesurf/Wakeboard",image:paulImage, description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in commodo risus. Phasellus laoreet bibendum nunc non imperdiet. Nulla malesuada, leo et egestas facilisis, sapien turpis fermentum eros, sed efficitur sapien mi in nunc. Aliquam mollis laoreet pretium. Mauris eu massa sed magna eleifend volutpat vitae in turpis."},
+    { id: id++, nom: 'Maxime', role: "Respo Com/Kitesurf/Wakeboard",image:paulImage, description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in commodo risus. Phasellus laoreet bibendum nunc non imperdiet. Nulla malesuada, leo et egestas facilisis, sapien turpis fermentum eros, sed efficitur sapien mi in nunc. Aliquam mollis laoreet pretium. Mauris eu massa sed magna eleifend volutpat vitae in turpis."},
     { id: id++, nom: 'Younes Bouhoreira', role: "Respo rando/course/tarpé",image:paulImage, description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in commodo risus. Phasellus laoreet bibendum nunc non imperdiet. Nulla malesuada, leo et egestas facilisis, sapien turpis fermentum eros, sed efficitur sapien mi in nunc. Aliquam mollis laoreet pretium. Mauris eu massa sed magna eleifend volutpat vitae in turpis."},
     { id: id++, nom: 'Belhassen Charbaji', role: "Respo Volley",image:paulImage, description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in commodo risus. Phasellus laoreet bibendum nunc non imperdiet. Nulla malesuada, leo et egestas facilisis, sapien turpis fermentum eros, sed efficitur sapien mi in nunc. Aliquam mollis laoreet pretium. Mauris eu massa sed magna eleifend volutpat vitae in turpis."},
     { id: id++, nom: 'Ludovic', role: "Respo ping-pong",image:paulImage, description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in commodo risus. Phasellus laoreet bibendum nunc non imperdiet. Nulla malesuada, leo et egestas facilisis, sapien turpis fermentum eros, sed efficitur sapien mi in nunc. Aliquam mollis laoreet pretium. Mauris eu massa sed magna eleifend volutpat vitae in turpis."},
@@ -37,7 +37,7 @@ const filteredMembers = computed(() => {
 
 
 <template>
-    <div class="p-6">
+    <div class="pt-20 md:pt-24 px-6 pb-6">
         <div class="flex justify-center mb-6">
             <div class="relative w-full max-w-md">
                 <input

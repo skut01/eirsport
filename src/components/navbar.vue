@@ -63,8 +63,8 @@ defineProps({
       </button>
 
       <ul class="hidden md:flex gap-6 text-xl font-medium text-black backdrop-blur-sm rounded px-3 py-1 shadow-2xl shadow-black/30">
-        <li><a href="#" class="hover:underline">Accueil</a></li>
-        <li><a href="#" class="hover:underline">Équipe</a></li>
+        <li><router-link to="/" class="hover:underline">Accueil</router-link></li>
+        <li><router-link to="/equipe" class="hover:underline"> Équipe</router-link></li>
         <li><a href="#" class="hover:underline">Événements</a></li>
         <li><a href="#" class="hover:underline">Course jcplusquoi</a></li>
         <li><a href="#" class="hover:underline">Contact</a></li>
@@ -75,8 +75,8 @@ defineProps({
       v-if="isOpen"
       class="flex flex-col gap-4 mt-4 text-black font-medium md:hidden bg-white/60 backdrop-blur-sm rounded px-3 py-1"
     >
-      <li><a href="#" class="hover:underline">Accueil</a></li>
-      <li><a href="#" class="hover:underline">Équipe</a></li>
+      <li><router-link to="/" class="hover:underline">Accueil</router-link></li>
+      <li><router-link to="/equipe" class="hover:underline"> Équipe</router-link></li>
       <li><a href="#" class="hover:underline">Événements</a></li>
       <li><a href="#" class="hover:underline">Course jcplusquoi</a></li>
       <li><a href="#" class="hover:underline">Contact</a></li>
