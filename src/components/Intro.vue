@@ -57,7 +57,7 @@
       </div>
 
       <router-link
-        to="/contact#contact"
+        to="/contact"
         class="block text-center py-6 px-4 rounded-xl font-semibold text-xl text-black transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
         style="
             background-image: repeating-linear-gradient(

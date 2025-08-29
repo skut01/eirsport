@@ -28,8 +28,8 @@ defineProps({
     />
 
     <h2 class="text-xl font-semibold">{{ nom }}</h2>
-    <p class="text-sm text-gray-500 mb-2">{{ role }}</p>
-    <p class="text-sm text-gray-700 text-justify">{{ description }}</p>
+    <p class="text-l text-gray-500 mb-2">{{ role }}</p>
+    <p class="text-l text-gray-700 text-justify">{{ description }}</p>
   </div>
 </template>
 
