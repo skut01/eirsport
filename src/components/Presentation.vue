@@ -1,13 +1,14 @@
 <script setup>
 import PresentationCard from './PresentationCard.vue'
 import mikelImage from '@/assets/presentations_cards/mikel.jpg'
-import paulImage from '@/assets/presentations_cards/paul.jpg'
+import paulImage from '@/assets/presentations_cards/Paul.jpg'
 import maximeImage from '@/assets/presentations_cards/Maxime.jpg'
 import emileImage from '@/assets/presentations_cards/Emile.jpg'
 import louisImage from '@/assets/presentations_cards/Louis.jpg'
 import nielsImage from '@/assets/presentations_cards/Niels.jpg'
 import Tom_alessandroImage from '@/assets/presentations_cards/Tom_alessandro.jpg'
 import younesImage from '@/assets/presentations_cards/Younes.jpg'
+import belhassenImage from '@/assets/presentations_cards/belhassen.jpg'
 import { ref,computed  } from 'vue'
 let id = 0
 
@@ -21,14 +22,15 @@ const members = ref([
     { id: id++, nom: 'Paul Skutecki', role: "Respo web",image:paulImage, description:"Ici ça mange des cartes graphiques sans modération."},
     { id: id++, nom: 'Younes Bouhoreira', role: "Respo rando/course",image:younesImage, description:"Pour vous aider à courir (pas forcément vite, mais avec style). A défaut d'être chez BDS il a décidé d'avoir 2 pôles."},
     { id: id++, nom: 'Jilian', role: "Respo Surf",image:paulImage, description:"Glisse assurée, mousse garantie. Et on parle pas que des vagues."},
-    { id: id++, nom: 'Belhassen Charbaji', role: "Respo Volley",image:paulImage, description:"Pour un filet tendu et des smashs, faites lui confiance !"},
+    { id: id++, nom: 'Belhassen Charbaji', role: "Respo Volley",image:belhassenImage, description:"Pour un filet tendu et des smashs, faites lui confiance !"},
     { id: id++, nom: 'Ludovic', role: "Respo ping-pong",image:paulImage, description:"Il a pas compris qu'il y avait déjà un pôle raquette mais bon on lui laisse ça."},
     { id: id++, nom: 'Niels Morin', role: "Respo basket",image:nielsImage, description:"On espère qu'il sera aussi bon que le rap qu'il a fait pour TMT. (voir meilleur on espère)."},
     { id: id++, nom: 'Youssef', role: "Respo foot",image:paulImage, description:"Coach tactique et simulateur pro, prêt à transformer un 5 vs 5 en Coupe du Monde."},
     { id: id++, nom: 'Remi Lamat', role: "Respo raquette",image:paulImage, description:"Peu importe le sport tant qu'il y a une raquette c'est bon (peut-être pas les randos raquette en montagne)."},
     { id: id++, nom: 'Damien', role: "Respo raquette",image:paulImage, description:"Peu importe le sport tant qu'il y a une raquette c'est bon (peut-être pas les randos raquette en montagne)."},
     { id: id++, nom: 'Emile', role: "Respo running",image:emileImage, description:"Pour vous aider à courir (pas forcément vite, mais avec style)."},
-    { id: id++, nom: 'Tom', role: "Respo Street Workout",image:Tom_alessandroImage, description:"Il a mis tous ses points en force mais ducoup les partiels ont été durs, dans tous les cas il sera là pour vous régaler."}
+    { id: id++, nom: 'Tom', role: "Respo Street Workout",image:Tom_alessandroImage, description:"Il a mis tous ses points en force mais ducoup les partiels ont été durs, dans tous les cas il sera là pour vous régaler."},
+    
 ])
 
 const search = ref('')

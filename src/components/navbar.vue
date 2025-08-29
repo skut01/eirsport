@@ -65,7 +65,7 @@ defineProps({
       <ul class="hidden md:flex gap-6 text-xl font-medium text-black backdrop-blur-sm rounded px-3 py-1 shadow-2xl shadow-black/30">
         <li><router-link to="/" class="hover:underline">Accueil</router-link></li>
         <li><router-link to="/equipe" class="hover:underline"> Équipe</router-link></li>
-        <li><a href="#" class="hover:underline">Événements</a></li>
+        <li><router-link to="/news" class="hover:underline">Événements</router-link></li>
         <li><a href="#" class="hover:underline">EDHEC</a></li>
         <li><router-link to="/contact" class="hover:underline"> Contact</router-link></li>
       </ul>

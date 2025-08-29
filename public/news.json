@@ -1,0 +1,18 @@
+[
+  {
+    "id": "site-2025",
+    "title": "Ouverture du site !",
+    "date": "2025-08-29",
+    "excerpt": "Bienvenue sur le site officiel d'EirSport !",
+    "image": "assets/Eirsport_Logo.png",
+    "link": "http://localhost:5173/eirsport/news"
+  },
+  {
+    "id": "rentrée-2025",
+    "title": "C'est reparti !",
+    "date": "2025-09-01",
+    "excerpt": "Encore une année sportive qui s'annonce riche en événements et en activités.",
+    "image": "assets/enseirb_batiment.jpeg",
+    "link": ""
+  }
+]
