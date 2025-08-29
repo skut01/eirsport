@@ -77,7 +77,7 @@ defineProps({
     >
       <li><router-link to="/" class="hover:underline">Accueil</router-link></li>
       <li><router-link to="/equipe" class="hover:underline"> Équipe</router-link></li>
-      <li><a href="#" class="hover:underline">Événements</a></li>
+      <li><router-link to="/news" class="hover:underline">Événements</router-link></li>
       <li><a href="#" class="hover:underline">EDHEC</a></li>
       <li><router-link to="/contact" class="hover:underline"> Contact</router-link></li>
     </ul>
