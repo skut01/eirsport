@@ -3,12 +3,14 @@ import Home from './components/Home.vue'
 import Presentation from './components/Presentation.vue'
 import Contact from './components/Contact.vue'
 import Actus from './components/Actus.vue'
+import EDHEC from './components/EDHEC.vue'
 
 const routes = [
   { path: '/', component: Home },
   { path: '/equipe', component: Presentation },
   { path: '/contact', component: Contact },
-  { path: '/news', component: Actus }
+  { path: '/news', component: Actus },
+  { path: '/course', component: EDHEC }
 ]
 
 const router = createRouter({

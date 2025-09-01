@@ -1,7 +1,6 @@
 <script setup>
 import PresentationCard from './PresentationCard.vue'
-import mikelImage from '@/assets/presentations_cards/mikel.jpg'
-import paulImage from '@/assets/presentations_cards/Paul.jpg'
+import mikelImage from '@/assets/presentations_cards/Mikel.jpg'
 import maximeImage from '@/assets/presentations_cards/Maxime.jpg'
 import emileImage from '@/assets/presentations_cards/Emile.jpg'
 import louisImage from '@/assets/presentations_cards/Louis.jpg'
@@ -9,27 +8,29 @@ import nielsImage from '@/assets/presentations_cards/Niels.jpg'
 import Tom_alessandroImage from '@/assets/presentations_cards/Tom_alessandro.jpg'
 import younesImage from '@/assets/presentations_cards/Younes.jpg'
 import belhassenImage from '@/assets/presentations_cards/belhassen.jpg'
+import remiImage from '@/assets/presentations_cards/Remi.jpg'
+import placeHolder from '@/assets/Eirsport_Logo.png'
 import { ref,computed  } from 'vue'
 let id = 0
 
 const members = ref([
-    { id: id++, nom: 'Mikel Vinciguerra', role: "Président",image:mikelImage, description:"Capitaine motivé, toujours partant pour tenter un nouveau sport et prêt à se battre pour vous régaler (en plus personne ne le prend à la bagarre)."},
-    { id: id++, nom: 'Mathéo Hugel', role: "Vice-Président",image:paulImage, description:"La légende raconte qu'il a confondu VP BDS et VP Eirsport... Mais bon maintenant qu'il est là on va le garder."},
-    { id: id++, nom: 'Yann', role: "Trésorier",image:paulImage, description:"Pour pouvoir vous régaler toute l'annéee sans finir dans le rouge fluo, voici notre pince officielle."},
-    { id: id++, nom: 'Maxime', role: "Respo Com/Kitesurf/Wakeboard",image:maximeImage, description:"Si vous pouvez lire ces lignes, c'est grâce à moi, même si personne ne lit ça..."},
-    { id: id++, nom: 'Louis Gauvain', role: "Respo com",image:louisImage, description:"A la base il voulait Respo bar, on a failli le renommer Respo Emploi Fictif, mais bon l'admin n'aurait peut-être pas kiffé."},
-    { id: id++, nom: 'Eoghan', role: "Respo Partenariat",image:paulImage, description:"Pour pouvoir vous régaler et vous dégotter un max de réductions sur vos sports, voici notre Respo Partenariat."},
-    { id: id++, nom: 'Paul Skutecki', role: "Respo web",image:paulImage, description:"Ici ça mange des cartes graphiques sans modération."},
-    { id: id++, nom: 'Younes Bouhoreira', role: "Respo rando/course",image:younesImage, description:"Pour vous aider à courir (pas forcément vite, mais avec style). A défaut d'être chez BDS il a décidé d'avoir 2 pôles."},
-    { id: id++, nom: 'Jilian', role: "Respo Surf",image:paulImage, description:"Glisse assurée, mousse garantie. Et on parle pas que des vagues."},
-    { id: id++, nom: 'Belhassen Charbaji', role: "Respo Volley",image:belhassenImage, description:"Pour un filet tendu et des smashs, faites lui confiance !"},
-    { id: id++, nom: 'Ludovic', role: "Respo ping-pong",image:paulImage, description:"Il a pas compris qu'il y avait déjà un pôle raquette mais bon on lui laisse ça."},
-    { id: id++, nom: 'Niels Morin', role: "Respo basket",image:nielsImage, description:"On espère qu'il sera aussi bon que le rap qu'il a fait pour TMT. (voir meilleur on espère)."},
-    { id: id++, nom: 'Youssef', role: "Respo foot",image:paulImage, description:"Coach tactique et simulateur pro, prêt à transformer un 5 vs 5 en Coupe du Monde."},
-    { id: id++, nom: 'Remi Lamat', role: "Respo raquette",image:paulImage, description:"Peu importe le sport tant qu'il y a une raquette c'est bon (peut-être pas les randos raquette en montagne)."},
-    { id: id++, nom: 'Damien', role: "Respo raquette",image:paulImage, description:"Peu importe le sport tant qu'il y a une raquette c'est bon (peut-être pas les randos raquette en montagne)."},
-    { id: id++, nom: 'Emile', role: "Respo running",image:emileImage, description:"Pour vous aider à courir (pas forcément vite, mais avec style)."},
-    { id: id++, nom: 'Tom', role: "Respo Street Workout",image:Tom_alessandroImage, description:"Il a mis tous ses points en force mais ducoup les partiels ont été durs, dans tous les cas il sera là pour vous régaler."},
+    { id: id++, nom: 'Mikel Vinciguerra', role: "Président",image:mikelImage, description:""},
+    { id: id++, nom: 'Mathéo Hugel', role: "Vice-Président",image:placeHolder, description:""},
+    { id: id++, nom: 'Yann', role: "Trésorier",image:placeHolder, description:""},
+    { id: id++, nom: 'Maxime', role: "Respo Com/Kitesurf/Wakeboard",image:maximeImage, description:""},
+    { id: id++, nom: 'Louis Gauvain', role: "Respo com",image:louisImage, description:""},
+    { id: id++, nom: 'Eoghan', role: "Respo Partenariat",image:placeHolder, description:""},
+    { id: id++, nom: 'Paul Skutecki', role: "Respo web",image:placeHolder, description:""},
+    { id: id++, nom: 'Younes Bouhoreira', role: "Respo rando/course",image:younesImage, description:""},
+    { id: id++, nom: 'Jilian', role: "Respo Surf",image:placeHolder, description:""},
+    { id: id++, nom: 'Belhassen Charbaji', role: "Respo Volley",image:belhassenImage, description:""},
+    { id: id++, nom: 'Ludovic', role: "Respo ping-pong",image:placeHolder, description:""},
+    { id: id++, nom: 'Niels Morin', role: "Respo basket",image:nielsImage, description:""},
+    { id: id++, nom: 'Youssef', role: "Respo foot",image:placeHolder, description:""},
+    { id: id++, nom: 'Remi Lamat', role: "Respo raquette",image:remiImage, description:""},
+    { id: id++, nom: 'Damien', role: "Respo raquette",image:placeHolder, description:""},
+    { id: id++, nom: 'Emile', role: "Respo running",image:emileImage, description:""},
+    { id: id++, nom: 'Tom', role: "Respo Street Workout",image:Tom_alessandroImage, description:""},
     
 ])
 
@@ -73,7 +74,7 @@ const filteredMembers = computed(() => {
                 </svg>
             </div>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
             <PresentationCard v-for="member in filteredMembers" :key="member.id" :image="member.image" :nom="member.nom" :role="member.role" :description="member.description"></PresentationCard>
         </div>
     </div>

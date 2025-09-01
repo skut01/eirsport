@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 
 const isOpen = ref(false)
 defineProps({
@@ -8,6 +9,9 @@ defineProps({
     default: false,
   },
 })
+
+
+const router = useRouter()
 </script>
 
 <template>
@@ -45,10 +49,12 @@ defineProps({
             );
             "
         >
+
             <img
             src="@/assets/Eirsport_Logo.png"
             alt="Logo"
             class="w-full h-full rounded-full object-contain bg-white"
+            @click="router.push('/')"
             />
         </div>
         <h1 class="text-2xl text-black font-bold backdrop-blur-sm rounded px-3 py-1 shadow-2xl shadow-black/30">Eirsport</h1>
@@ -66,7 +72,7 @@ defineProps({
         <li><router-link to="/" class="hover:underline">Accueil</router-link></li>
         <li><router-link to="/equipe" class="hover:underline"> Équipe</router-link></li>
         <li><router-link to="/news" class="hover:underline">Événements</router-link></li>
-        <li><a href="#" class="hover:underline">EDHEC</a></li>
+        <li><router-link to="/course" class="hover:underline">EDHEC</router-link></li>
         <li><router-link to="/contact" class="hover:underline"> Contact</router-link></li>
       </ul>
     </div>
@@ -78,7 +84,7 @@ defineProps({
       <li><router-link to="/" class="hover:underline">Accueil</router-link></li>
       <li><router-link to="/equipe" class="hover:underline"> Équipe</router-link></li>
       <li><router-link to="/news" class="hover:underline">Événements</router-link></li>
-      <li><a href="#" class="hover:underline">EDHEC</a></li>
+      <li><router-link to="/course" class="hover:underline">EDHEC</router-link></li>
       <li><router-link to="/contact" class="hover:underline"> Contact</router-link></li>
     </ul>
   </nav>

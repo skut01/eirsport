@@ -5,7 +5,7 @@ import telegramLogo from '@/assets/Telegram_logo.svg'
 defineProps({
   email: {
     type: String,
-    default: 'adresse.random@gmail.com'
+    default: 'eirsport.enseirb@gmail.com'
   },
   instagramLink: {
     type: String,
